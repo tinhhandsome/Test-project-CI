@@ -33,10 +33,11 @@ jobs:
       - name: Run a multi-line script 1
         run: |
           echo hello
-          echo test, and deploy your project.
+          a = 5
       - name: Run a multi-line script 2
         run: |
-          echo Fail
+          a = a + 1
+          console.log(a)
           
       - name: Run a multi-line script 3
         run: |
